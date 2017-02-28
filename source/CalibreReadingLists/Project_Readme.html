@@ -96,53 +96,42 @@
 <body>
 
     <div id="header">
-        <h1>Your ASP.NET application</h1>
-        <p>Congratulations! You've created a project</p>
+        <h1>Calibre Readings Lists</h1>
+        <p>Website and mobile app to manage reading lists using books from calibre e-book manager</p>
     </div>
 
     <div id="main">
-        <div class="section first">
-            <h2>This application consists of:</h2>
+
+        <div class="section">
+            <h2>How it will work?</h2>
             <ul>
-                <li>Sample pages showing basic nav between Home, About, and Contact</li>
-                <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=615519">Bootstrap</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615520">Authentication</a>, if selected, shows how to register and sign in</li>
-                <li>ASP.NET features managed using <a href="http://go.microsoft.com/fwlink/?LinkID=320756">NuGet</a></li>
+                <li>A backend service will get data from Calibre Web RSS feed such as <a href="http://ebooks.tollkuci.com:8080/opds/navcatalog/4f6e6577657374">http://ebooks.tollkuci.com:8080/opds/navcatalog/4f6e6577657374</a>. The data will be cached in some intermediate layer.</li>
+                <li>Web (responsive) UI will allow the user to create account/sign in, connect with the calibre UI and then create reading lists from their books. Also they will be able to manage their progress.</li>
+                <li>Mobile app will also be developed that will use REST services in server and provide similary features as the website.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Customize app</h2>
+            <h2>Technical details</h2>
             <ul>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615541">Get started with ASP.NET MVC</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615523">Change the site's theme</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615524">Add more libraries using NuGet</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615542">Configure authentication</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615526">Customize information about the website users</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615527">Get information from social providers</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615528">Add HTTP services using ASP.NET Web API</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615529">Secure your web API</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615530">Add real-time web with ASP.NET SignalR</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615531">Add components using Scaffolding</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615532">Test your app with Browser Link</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615533">Share your project</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Deploy</h2>
-            <ul>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615534">Ensure your app is ready for production</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615535">Microsoft Azure</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615536">Hosting providers</a></li>
+                <li>Website will be developed using ASP.NET MVC and pure.css frameworks.</li>
+                <li>Mobile apps will be developed using Ionic Framework</li>
+                <li>REST services to be decided</li>
+                <li>Database to be decided</li>
+                <li>To work on the project you will need Visual Studio 2015 and Ionic 2 apps for Visual Studio (check out <a href="https://taco.visualstudio.com/en-us/docs/tutorial-ionic2/">https://taco.visualstudio.com/en-us/docs/tutorial-ionic2/</a> )</li>
             </ul>
         </div>
 
         <div class="section last">
-            <h2>Get help</h2>
+            <h2>Licensing </div>
+
+        <div class="section last">
+            <h2>Licensing</h2>
             <ul>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615537">Get help</a></li>
-                <li><a href="http://go.microsoft.com/fwlink/?LinkID=615538">Get more templates</a></li>
+                <li>Project is hosted in GitHub and is open source (MIT License)</li>
+                <li>Website and mobile apps will be free.</li>
+                <li>It is using:</li>
+                <li><a href="https://opds4net.codeplex.com/">https://opds4net.codeplex.com/</a> - MIT License</li>
             </ul>
         </div>
     </div>
